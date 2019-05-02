@@ -24,3 +24,14 @@ transporter.sendMail(mail, (err, res) => {
 
     console.log("Email berhasil terkirim");
 })
+
+const sendVerify = (username, email, password) => {
+    const mail = {
+        from :'tommy<tommy@gmail.com>',
+        to : email,
+        subject : 'Verifikasi email',
+        html : `<p>Hello ${name}, please click the link for verify your email</p>
+        <a href= http://localhost:2010/verify?username`,
+        attachment : []
+    }
+}
